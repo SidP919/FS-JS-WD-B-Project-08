@@ -1,10 +1,14 @@
 *{
     font-family: sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 [src="./images/logo.svg"]{
     margin-right: 8%;
@@ -91,3 +95,84 @@ nav{
     margin-left: 40%;
 }
 
+.sm-hide{
+    visibility: visible;
+}
+.big-hide{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* ====================================== Media Queries ============================================== */
+@media (min-width: 1707px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+    .nav-items{
+        visibility: collapse;
+        width: 0;
+    }
+    .sm-hide{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .big-hide{
+        visibility: visible;
+        width: auto;
+        height: auto;
+        padding: 16px;
+        margin: auto;
+        text-align: center;
+    }
+    .imgs-div{
+        min-width: 100%;
+        top: 12%;
+        position: relative;
+        padding: 0;
+    }
+    .left-section{
+        min-width: 92%;
+        padding: 2% 4%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-hd{
+        text-align: center;
+        font-size: 56px;
+        margin-bottom: 2%;
+    }
+    .left-content{
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .learn-more-btn{
+        margin: 4%;
+        margin-bottom: 8%;
+    }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
